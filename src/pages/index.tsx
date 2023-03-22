@@ -5,7 +5,7 @@ import { Container, Grid } from "@chakra-ui/react";
 import { useState } from "react";
 
 const Home = () => {
-  const [result, setResult] = useState();
+  const [result, setResult] = useState<Data | undefined>();
 
   const sendResult = (data: Data) => {
     setResult(data);
